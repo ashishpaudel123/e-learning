@@ -238,6 +238,246 @@ html {
     object-fit: contain;
 }
 
+/* ========================================
+   HERO SECTION STYLES
+   Main banner with headline and student image
+======================================== */
+.hero-section {
+    background: var(--bg-white);
+    padding: 0px 0 60px;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Left side content */
+.hero-left {
+    padding-right: 40px;
+}
+
+.hero-subtitle {
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.hero-title-green {
+    color: var(--primary-color);
+}
+
+.hero-description {
+    font-size: 18px;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+/* Hero buttons */
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    background: linear-gradient(180deg, #9AC23B, #C6AD2E);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.secondary-btn:hover {
+    background-color: #B3A05C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(200, 181, 104, 0.3);
+}
+
+/* Right side with image and badges */
+.hero-right {
+    position: relative;
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image > img {
+    width: 100%;
+    max-width: 456px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Total Students badge (top right) */
+.hero-badge-total {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.badge-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #E8F5E9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-icon i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.badge-label {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+/* Enrolled Students section (left side) */
+.hero-enrolled {
+    position: absolute;
+    top: 30%;
+    left: -80px;
+    transform: translateY(-50%);
+    padding: 24px;
+    min-width: 200px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.enrolled-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+}
+
+.enrolled-label {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+
+/* Student avatars */
+.enrolled-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: -12px;
+    object-fit: cover;
+}
+
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.avatar-more {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4A4A4A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: -12px;
+    border: 3px solid white;
+}
+
+/* Next button (bottom right) */
+.hero-next {
+    position: absolute;
+    bottom: 210px;
+    right: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 12px;
+}
+
+.next-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #C8B568;
+}
+
+.next-dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #C6802E;
+    transition: var(--transition);
+}
+
+.dot.active {
+    width: 5cap;
+    border-radius: 6px;
+    background-color: #C6802E;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 /* ====== NAVIGATION BAR STYLES (The main menu with logo and links) ====== */
 .navbar {
     background-color: var(--bg-white);
@@ -475,6 +715,64 @@ html {
     .navbar-content {
         gap: 20px;
     }
+    
+    /* Hero section mobile styles */
+    .hero-section {
+        padding: 40px 0 30px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-left {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-description {
+        font-size: 16px;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-badge-total {
+        top: 100px;
+        right: 40px;
+        padding: 8px 16px;
+        gap: 8px;
+    }
+    
+    .badge-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .badge-number {
+        font-size: 20px;
+    }
+    
+    .hero-enrolled {
+        left: 10px;
+        padding: 16px;
+        min-width: 160px;
+    }
+    
+    .enrolled-number {
+        font-size: 24px;
+    }
+    
+    .hero-next {
+        bottom: 40px;
+        right: 20px;
+    }
 }
 
 /* Very small mobile phones */
@@ -518,5 +816,85 @@ html {
     .mobile-icon-link i {
         font-size: 14px;
     }
+    
+    /* Hero section for very small screens */
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    
+    .hero-btn-primary,
+    .secondary-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .hero-badge-total {
+        padding: 6px 12px;
+        gap: 6px;
+    }
+    
+    .badge-icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .badge-icon i {
+        font-size: 14px;
+    }
+    
+    .badge-number {
+        font-size: 16px;
+    }
+    
+    .badge-label {
+        font-size: 10px;
+    }
+    
+    .hero-enrolled {
+        left: 5px;
+        padding: 12px;
+        min-width: 140px;
+    }
+    
+    .enrolled-number {
+        font-size: 20px;
+    }
+    
+    .enrolled-label {
+        font-size: 12px;
+    }
+    
+    .avatar,
+    .avatar-more {
+        width: 32px;
+        height: 32px;
+        font-size: 10px;
+    }
+    
+    .hero-next {
+        bottom: 20px;
+        right: 10px;
+    }
+    
+    .next-text {
+        font-size: 14px;
+    }
+    
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .dot.active {
+        width: 30px;
+    }
 }
-
