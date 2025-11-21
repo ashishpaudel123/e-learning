@@ -20,13 +20,16 @@
     />
   </head>
   <body>
-    <!-- Top Bar -->
+    <!-- ========== TOP BAR SECTION ========== -->
+    <!-- This is the top green bar with contact info and social links -->
     <header class="top-bar">
       <div class="container">
         <div class="top-bar-content">
-          <!-- Left Section -->
+          <!-- Enquiry button and social media icons -->
           <div class="top-bar-left">
-            <button class="primary-btn">Enquiry Now</button>
+            <button class="primary-btn" style="padding: 7px 14px">
+              Enquiry Now
+            </button>
             <ul class="social-links">
               <li>
                 <a href="#" aria-label="Facebook">
@@ -51,7 +54,7 @@
             </ul>
           </div>
 
-          <!-- Center Section -->
+          <!-- Phone number and email in the center -->
           <div class="top-bar-center">
             <a href="tel:9780023457" class="contact-link">
               <img src="icons/phone.png" alt="Phone" class="contact-icon" />
@@ -63,7 +66,7 @@
             </a>
           </div>
 
-          <!-- Right Section -->
+          <!-- App store download buttons on the right -->
           <div class="top-bar-right">
             <span class="download-text">Download Our App</span>
             <a href="#" class="app-link" aria-label="Download on Play Store">
@@ -74,7 +77,7 @@
             </a>
           </div>
 
-          <!-- Mobile Icons -->
+          <!-- These icons show only on mobile/small screens -->
           <div class="mobile-icons">
             <a
               href="tel:9780023457"
@@ -97,6 +100,64 @@
         </div>
       </div>
     </header>
+
+    <!-- ========== NAVIGATION BAR SECTION ========== -->
+    <!-- This is the main menu with logo, links, and action buttons -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <!-- Website logo (clickable, goes to home page) -->
+          <a href="index.html" class="logo">
+            <img
+              src="icons/logo.png"
+              width="154px"
+              height="52px"
+              alt="E-Learning Education"
+            />
+          </a>
+
+          <!-- Main menu links (Home, Courses, etc.) -->
+          <ul class="nav-links">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#" class="nav-link">Courses</a></li>
+            <li><a href="#" class="nav-link">Free Material</a></li>
+            <li><a href="#" class="nav-link">About Us</a></li>
+            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li><a href="#" class="nav-link">Notice</a></li>
+          </ul>
+
+          <!-- Buttons and user profile icon on the right -->
+          <div class="nav-actions">
+            <button class="primary-2btn">Free Trial</button>
+            <button class="primary-btn">Take Exam</button>
+            <a href="#" class="user-icon" aria-label="User Profile">
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
+
+          <!-- Hamburger menu button (shows only on mobile) -->
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Mobile menu (hidden by default, shows when hamburger is clicked) -->
+        <div class="mobile-nav">
+          <ul class="mobile-nav-links">
+            <li><a href="#" class="mobile-nav-link active">Home</a></li>
+            <li><a href="#" class="mobile-nav-link">Courses</a></li>
+            <li><a href="#" class="mobile-nav-link">Free Material</a></li>
+            <li><a href="#" class="mobile-nav-link">About Us</a></li>
+            <li><a href="#" class="mobile-nav-link">Contact Us</a></li>
+            <li><a href="#" class="mobile-nav-link">Notice</a></li>
+          </ul>
+          <div class="mobile-nav-actions">
+            <button class="primary-2btn">Free Trial</button>
+            <button class="primary-btn">Take Exam</button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <script src="script.js"></script>
   </body>
