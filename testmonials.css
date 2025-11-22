@@ -55,17 +55,6 @@
     position: relative;
 }
 
-.quote-icon {
-    position: absolute;
-    top: 0px;
-    left: 21px;
-}
-
-.quote-icon i {
-    font-size: 60px;
-    color: #E8F5E9;
-}
-
 .testimonial-text {
     font-size: 16px;
     color: var(--text-muted);
@@ -157,10 +146,6 @@
         padding: 35px 25px;
     }
     
-    .quote-icon i {
-        font-size: 40px;
-    }
-    
     .student-1 {
         display: none;
     }
@@ -177,6 +162,9 @@
     
     .testimonial-text {
         font-size: 15px;
+    }
+    .quote-icon img{
+        height: 20px;
     }
 }
 
@@ -202,15 +190,6 @@
     
     .testimonial-right {
         padding: 30px 20px;
-    }
-    
-    .quote-icon {
-        top: 20px;
-        right: 20px;
-    }
-    
-    .quote-icon i {
-        font-size: 30px;
     }
     
     .student-1,
