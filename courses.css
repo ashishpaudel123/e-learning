@@ -55,33 +55,6 @@
     padding: 10px 0;
 }
 
-.course-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 12px;
-    line-height: 28px;
-}
-
-.course-description {
-    font-size: 14px;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
-
-.course-language {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--text-dark);
-    padding: 4px 13px;
-    border-radius: 2px;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 16px;
-    width: fit-content;
-}
-
 .courses-dots {
     display: flex;
     justify-content: center;
@@ -186,6 +159,14 @@
     
     .course-title {
         font-size: 18px;
+    }
+
+    section.material-section .secondary-btn, section.courses-section .secondary-btn{
+        width: 100%;
+    }
+
+    section.material-section .material-image{
+        width: 100%;
     }
     
 }

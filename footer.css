@@ -26,13 +26,6 @@
     width: auto;
 }
 
-.footer-description {
-    font-size: 14px;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 24px;
-}
-
 .footer-btn {
     background-color: var(--secondary-color);
     color: white;
