@@ -29,11 +29,9 @@
   </head>
   <body>
     <!-- ========== TOP BAR SECTION ========== -->
-    <!-- This is the top green bar with contact info and social links -->
     <header class="top-bar">
       <div class="container">
         <div class="top-bar-content">
-          <!-- Enquiry button and social media icons -->
           <div class="top-bar-left">
             <button class="primary-btn" style="padding: 7px 14px">
               Enquiry Now
@@ -62,7 +60,6 @@
             </ul>
           </div>
 
-          <!-- app number and email in the center -->
           <div class="top-bar-center">
             <a href="tel:9780023457" class="contact-link">
               <img src="icons/phone.png" alt="app" class="contact-icon" />
@@ -74,7 +71,6 @@
             </a>
           </div>
 
-          <!-- App store download buttons on the right -->
           <div class="top-bar-right">
             <span class="download-text">Download Our App</span>
             <a href="#" class="app-link" aria-label="Download on Play Store">
@@ -85,7 +81,7 @@
             </a>
           </div>
 
-          <!-- These icons show only on mobile/small screens -->
+          <!--  icons show only on mobile screens -->
           <div class="mobile-icons">
             <a
               href="tel:9780023457"
@@ -110,11 +106,9 @@
     </header>
 
     <!-- ========== NAVIGATION BAR SECTION ========== -->
-    <!-- This is the main menu with logo, links, and action buttons -->
     <nav class="navbar">
       <div class="container">
         <div class="navbar-content">
-          <!-- Website logo (clickable, goes to home page) -->
           <a href="index.html" class="logo">
             <img
               src="icons/logo.png"
@@ -124,17 +118,15 @@
             />
           </a>
 
-          <!-- Main menu links (Home, Courses, etc.) -->
           <ul class="nav-links">
-            <li><a href="#" class="nav-link active">Home</a></li>
-            <li><a href="#" class="nav-link">Courses</a></li>
-            <li><a href="#" class="nav-link">Free Material</a></li>
-            <li><a href="#" class="nav-link">About Us</a></li>
-            <li><a href="#" class="nav-link">Contact Us</a></li>
-            <li><a href="#" class="nav-link">Notice</a></li>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#courses" class="nav-link">Courses</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#free-material" class="nav-link">Free Material</a></li>
+            <li><a href="#testmonial" class="nav-link">Testimonial</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
           </ul>
 
-          <!-- Buttons and user profile icon on the right -->
           <div class="nav-actions">
             <button class="primary-2btn">Free Trial</button>
             <button class="primary-btn">Take Exam</button>
@@ -152,12 +144,16 @@
         <!-- Mobile menu (hidden by default, shows when hamburger is clicked) -->
         <div class="mobile-nav">
           <ul class="mobile-nav-links">
-            <li><a href="#" class="mobile-nav-link active">Home</a></li>
-            <li><a href="#" class="mobile-nav-link">Courses</a></li>
-            <li><a href="#" class="mobile-nav-link">Free Material</a></li>
-            <li><a href="#" class="mobile-nav-link">About Us</a></li>
-            <li><a href="#" class="mobile-nav-link">Contact Us</a></li>
-            <li><a href="#" class="mobile-nav-link">Notice</a></li>
+            <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+            <li><a href="#courses" class="mobile-nav-link">Courses</a></li>
+            <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+            <li>
+              <a href="#free-material" class="mobile-nav-link">Free Material</a>
+            </li>
+            <li>
+              <a href="#testmonial" class="mobile-nav-link">Testimonial </a>
+            </li>
+            <li><a href="#blog" class="mobile-nav-link">Blog</a></li>
           </ul>
           <div class="mobile-nav-actions">
             <button class="primary-2btn">Free Trial</button>
@@ -168,11 +164,10 @@
     </nav>
 
     <!-- ========== HERO SECTION ========== -->
-    <!-- Main banner section with headline and call-to-action buttons -->
-    <section class="hero-section">
+
+    <section id="home" class="hero-section">
       <div class="container">
         <div class="hero-content">
-          <!-- Left side: Text and buttons -->
           <div class="hero-left">
             <p class="hero-subtitle">Online Test Portal</p>
             <h1 class="hero-title">
@@ -183,20 +178,16 @@
               Unlock your potential with our user-friendly online test portal
             </p>
 
-            <!-- Call-to-action buttons -->
             <div class="hero-buttons">
               <button class="primary-2btn">Take Exam</button>
               <button class="secondary-btn">Buy Courses</button>
             </div>
           </div>
 
-          <!-- Right side: Image and statistics -->
           <div class="hero-right">
-            <!-- Student image -->
             <div class="hero-image">
               <img src="images/laptop-girl.png" alt="Student with laptop" />
 
-              <!-- Total Students badge (top right) -->
               <div class="hero-badge-total">
                 <div class="badge-icon">
                   <i class="fas fa-user-graduate"></i>
@@ -207,11 +198,9 @@
                 </div>
               </div>
 
-              <!-- Enrolled Students section (left side) -->
               <div class="hero-enrolled">
                 <h3 class="enrolled-number">36k +</h3>
                 <p class="enrolled-label">Enrolled Students</p>
-                <!-- Student avatars -->
                 <div class="enrolled-avatars">
                   <img
                     src="icons/peoples/Vector 1.png"
@@ -243,7 +232,6 @@
                 </div>
               </div>
 
-              <!-- Next button (bottom right) -->
               <div class="hero-next">
                 <span class="next-text">Next</span>
                 <div class="next-dots">
@@ -259,17 +247,15 @@
     </section>
 
     <!-- ========== COURSES SECTION ========== -->
-    <section class="courses-section">
+    <section id="courses" class="courses-section">
       <div class="container courses-container">
-        <!-- Section header -->
         <div class="section-header">
           <span class="section-badge">Courses</span>
           <h2 class="section-title">Achieve Your Goal With Elearning</h2>
         </div>
 
-        <!-- Courses grid -->
         <div class="courses-grid">
-          <!-- Course Card 1 -->
+          <!-- Card 1 -->
           <div class="course-card">
             <div class="course-image">
               <img
@@ -288,7 +274,7 @@
             </div>
           </div>
 
-          <!-- Course Card 2 -->
+          <!-- Card 2 -->
           <div class="course-card">
             <div class="course-image">
               <img
@@ -307,7 +293,7 @@
             </div>
           </div>
 
-          <!-- Course Card 3 -->
+          <!-- Card 3 -->
           <div class="course-card">
             <div class="course-image">
               <img
@@ -326,7 +312,7 @@
             </div>
           </div>
 
-          <!-- Course Card 4 -->
+          <!-- Card 4 -->
           <div class="course-card">
             <div class="course-image">
               <img
@@ -358,17 +344,16 @@
     </section>
 
     <!-- ========== ABOUT US SECTION ========== -->
-    <section class="about-section">
+    <section id="about" class="about-section">
       <div class="container">
         <div class="about-content">
-          <!-- Left side: Text and features -->
           <div class="about-left">
             <span class="about-badge">About Us</span>
             <h2 class="about-title">
               Discover Our Story: Empowering Learning Through E-Learning
             </h2>
 
-            <!-- Features grid -->
+            <!-- Features -->
             <div class="about-features">
               <!-- Feature 1 -->
               <div class="about-feature">
@@ -410,7 +395,6 @@
               </div>
             </div>
 
-            <!-- Learn More button -->
             <button class="about-btn">Learn More About Us</button>
           </div>
         </div>
@@ -418,9 +402,8 @@
     </section>
 
     <!-- ========== Free Material SECTION ========== -->
-    <section class="material-section">
+    <section id="free-material" class="material-section">
       <div class="container">
-        <!-- Section header -->
         <div class="section-header">
           <span class="section-badge">Free Material</span>
           <h2 class="section-title">
@@ -428,9 +411,9 @@
           </h2>
         </div>
 
-        <!-- Courses grid -->
+        <!-- Courses -->
         <div class="courses-grid">
-          <!-- Course Card 1 -->
+          <!-- Card 1 -->
           <div class="course-card">
             <div class="material-image">
               <img src="images/book.png" alt="Korean Course Book" />
@@ -444,7 +427,7 @@
             </div>
           </div>
 
-          <!-- Course Card 2 -->
+          <!-- Card 2 -->
           <div class="course-card">
             <div class="material-image">
               <img src="images/book.png" alt="Japanese Course Book" />
@@ -458,7 +441,7 @@
             </div>
           </div>
 
-          <!-- Course Card 3 -->
+          <!-- Card 3 -->
           <div class="course-card">
             <div class="material-image">
               <img src="images/book.png" alt="Korean Course Book" />
@@ -472,7 +455,7 @@
             </div>
           </div>
 
-          <!-- Course Card 4 -->
+          <!-- Card 4 -->
           <div class="course-card">
             <div class="material-image">
               <img src="images/book.png" alt="Japanese Course Book" />
@@ -490,15 +473,13 @@
     </section>
 
     <!-- ========== TESTIMONIAL SECTION ========== -->
-    <section class="testimonial-section">
+    <section id="testmonial" class="testimonial-section">
       <div class="container">
-        <!-- Section header -->
         <div class="section-header">
           <span class="section-badge">Testimonial</span>
           <h2 class="section-title">What Our Student Has to Say About US</h2>
         </div>
 
-        <!-- Testimonial content -->
         <div class="testimonial-content">
           <!-- Left side: Student images -->
           <div class="testimonial-left">
@@ -556,7 +537,6 @@
     <!-- ========== FAQ SECTION ========== -->
     <section class="faq-section">
       <div class="container">
-        <!-- Section header -->
         <div class="section-header">
           <span class="section-badge">Common Question</span>
           <h2 class="section-title">Most Popular Question</h2>
@@ -564,7 +544,7 @@
 
         <!-- FAQ accordion -->
         <div class="faq-accordion">
-          <!-- FAQ Item 1 -->
+          <!-- Item 1 -->
           <div class="faq-item active">
             <div class="faq-question">
               <h3>How Does E-learning Work?</h3>
@@ -584,7 +564,7 @@
             </div>
           </div>
 
-          <!-- FAQ Item 2 -->
+          <!-- Item 2 -->
           <div class="faq-item">
             <div class="faq-question">
               <h3>Steps to Starting an E commerce Business</h3>
@@ -600,7 +580,7 @@
             </div>
           </div>
 
-          <!-- FAQ Item 3 -->
+          <!-- Item 3 -->
           <div class="faq-item">
             <div class="faq-question">
               <h3>Benefits of E commerce</h3>
@@ -616,7 +596,7 @@
             </div>
           </div>
 
-          <!-- FAQ Item 4 -->
+          <!-- Item 4 -->
           <div class="faq-item">
             <div class="faq-question">
               <h3>Disadvantage of E commerce</h3>
@@ -632,7 +612,7 @@
             </div>
           </div>
 
-          <!-- FAQ Item 5 -->
+          <!-- Item 5 -->
           <div class="faq-item">
             <div class="faq-question">
               <h3>Challenges of E commerce</h3>
@@ -674,7 +654,6 @@
             </p>
             <h3 class="download-subtitle">E-Learning App</h3>
 
-            <!-- App store buttons -->
             <div class="download-buttons">
               <a href="#" class="store-btn google-play">
                 <i class="fab fa-google-play"></i>
@@ -697,17 +676,16 @@
     </section>
 
     <!-- ========== BLOG SECTION ========== -->
-    <section class="blog-section">
+    <section id="blog" class="blog-section">
       <div class="container">
-        <!-- Section header -->
         <div class="section-header">
           <span class="section-badge">Blog</span>
           <h2 class="section-title">Achieve Your Goal With Elearning</h2>
         </div>
 
-        <!-- Blog cards grid -->
+        <!-- Blog cards -->
         <div class="blog-grid">
-          <!-- Blog Card 1 -->
+          <!-- Card 1 -->
           <article class="blog-card">
             <div class="blog-image">
               <img src="images/blog-i.png" alt="Person working on laptop" />
@@ -729,7 +707,7 @@
             </div>
           </article>
 
-          <!-- Blog Card 2 -->
+          <!-- Card 2 -->
           <article class="blog-card">
             <div class="blog-image">
               <img src="images/blog-ii.png" alt="Laptop with coffee" />
@@ -751,7 +729,7 @@
             </div>
           </article>
 
-          <!-- Blog Card 3 -->
+          <!-- Card 3 -->
           <article class="blog-card">
             <div class="blog-image">
               <img src="images/blog-iii.png" alt="Person writing notes" />
@@ -780,7 +758,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <!-- Column 1: Logo and description -->
           <div class="footer-column footer-about">
             <div class="footer-logo">
               <img src="icons/logo.png" alt="E-Learning Education" />
@@ -792,7 +769,6 @@
             <button class="secondary-btn">About Us</button>
           </div>
 
-          <!-- Column 2: Quick links -->
           <div class="footer-column">
             <h3 class="footer-title">Quick links</h3>
             <ul class="footer-links">
@@ -803,7 +779,6 @@
             </ul>
           </div>
 
-          <!-- Column 3: Contact info -->
           <div class="footer-column">
             <h3 class="footer-title">Contact info</h3>
             <ul class="footer-links">
@@ -812,7 +787,6 @@
             </ul>
           </div>
 
-          <!-- Column 4: Newsletter -->
           <div class="footer-column footer-newsletter">
             <h3 class="footer-title">News letter</h3>
             <p class="newsletter-description">
