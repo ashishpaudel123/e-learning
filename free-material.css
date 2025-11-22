@@ -1,6 +1,7 @@
 /* ========== FREE MATERIAL SECTION ========== */
 
 .material-section{
+    padding: 80px 0;
     box-shadow: 0px 4px 4px 0px #00000005;
     background: linear-gradient(180deg, #F5FFF7 0%, rgba(245, 255, 247, 0) 100%);
 }
