@@ -9,14 +9,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: flex-start;
 }
 
 .download-left {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .app-mockup {
@@ -50,6 +49,7 @@
     line-height: 1.6;
     margin-bottom: 30px;
     max-width: 500px;
+    text-align: center;
 }
 
 .download-subtitle {
@@ -128,7 +128,7 @@
     }
     
     .app-mockup {
-        height: 400px;
+        display: none;
     }
 }
 
@@ -145,13 +145,6 @@
         font-size: 20px;
     }
     
-    .app-mockup {
-        height: 350px;
-    }
-    
-    .app-image {
-        width: 200px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -175,13 +168,5 @@
     .store-btn {
         width: 100%;
         justify-content: center;
-    }
-    
-    .app-mockup {
-        height: 300px;
-    }
-    
-    .app-image {
-        width: 160px;
     }
 }
