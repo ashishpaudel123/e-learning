@@ -10,7 +10,7 @@
     --primary-color: #3AB54A;
     --secondary-color: #9AC23B;
     --accent-color: #FFF1A7B2;
-    --text-dark: ##2C2626;
+    --text-dark: #2C2626;
     --text-light: #5F6368;
     --text-muted: #718096;
     --bg-light: #f7fafc;
@@ -1106,4 +1106,226 @@ html {
         font-size: 18px;
     }
     
+}
+
+/* ========== ABOUT US SECTION ========== */
+.about-section {
+    background-image: linear-gradient(to right, rgba(45, 45, 45, 0.95) 0%, rgba(45, 45, 45, 0.92) 30%, rgba(45, 45, 45, 0.25) 50%, rgba(45, 45, 45, 0) 100%), url('../images/student.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    padding: 58px 0px;
+}
+
+.about-left {
+    max-width: 650px;
+    z-index: 2;
+}
+
+.about-badge {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+
+.about-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.about-feature {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px 30px;
+    position: relative;
+}
+
+.about-feature::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 70px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+
+.about-feature:last-child::after {
+    display: none;
+}
+
+.feature-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon i {
+    font-size: 24px;
+    color: var(--text-dark);
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark) !important;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: var(--text-dark) !important;
+    margin: 0;
+    font-weight: 400px;
+}
+
+.about-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--accent-color);
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    width: fit-content;
+}
+
+.about-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.about-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive design for about section */
+@media (max-width: 1024px) {
+    .about-section {
+        background-size: cover;
+        background-position: center right;
+        background-image: linear-gradient(to right, rgba(45, 45, 45, 0.95) 0%, rgba(45, 45, 45, 0.92) 30%, rgba(45, 45, 45, 0.75) 50%, rgba(45, 45, 45, 0.55) 100%), url('../images/student.png');
+    }
+    
+    .about-title {
+        font-size: 36px;
+    }
+    
+    .about-left {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+        background-image: linear-gradient(to bottom, rgba(45, 45, 45, 0.88) 0%, rgba(45, 45, 45, 0.92) 100%), url('../images/student.png');
+        background-position: center;
+    }
+    
+    .about-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .about-features {
+        margin-bottom: 30px;
+    }
+    
+    .about-feature {
+        padding: 20px 20px;
+        gap: 16px;
+    }
+
+    .about-feature:last-child{
+        border: none;
+    }
+    
+    .feature-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .feature-icon i {
+        font-size: 20px;
+    }
+    
+    .feature-title {
+        font-size: 16px;
+    }
+    
+    .feature-description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-badge {
+        font-size: 14px;
+    }
+    
+    .about-title {
+        font-size: 24px;
+    }
+
+    .about-feature {
+        padding: 16px 9px;
+        gap: 8px;
+    }
+    
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .feature-icon i {
+        font-size: 18px;
+    }
+    
+    .about-btn {
+        width: 100%;
+        text-align: center;
+    }
 }
