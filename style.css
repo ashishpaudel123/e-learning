@@ -781,7 +781,8 @@ html {
     /* Hero section mobile styles */
     .hero-section {
         padding: 40px 0 30px;
-        background-size: 80rem auto;
+        background-size: 90rem auto;
+        background-position: top right;
     }
 
     .hero-content {
@@ -889,7 +890,7 @@ html {
     .hero-section {
     padding: 0px;
     margin-top: 0px;
-    background-size: 40rem auto;
+    background-size: 70rem auto;
     }
 
     .hero-right {
@@ -986,7 +987,19 @@ html {
 
 /* hero section responsiveness in very small screen */
 
+@media (max-width: 375px) {
+
+    .hero-section {
+    background-size: 60rem auto;
+    }
+    
+}
+
 @media (max-width: 320px) {
+
+    .hero-section {
+    background-size: 50rem auto;
+    }
     .hero-badge-total{
     gap: 6px;
     top: 60px;
