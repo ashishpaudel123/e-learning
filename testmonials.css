@@ -49,9 +49,11 @@
 
 .testimonial-right {
     flex: 0 0 40%;
-    background-color: #F8FFF9;
+    background-image: url("icons/testimonial-ellipse.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 50px 40px;
-    border-radius: 20px;
     position: relative;
 }
 
