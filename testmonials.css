@@ -100,10 +100,6 @@
 
 /* Responsive design for testimonial section */
 @media (max-width: 1024px) {
-    .testimonial-content {
-        flex-direction: column;
-        gap: 40px;
-    }
     
     .testimonial-left {
         flex: 1;
@@ -132,6 +128,14 @@
     }
 }
 
+@media (max-width: 1480px) {
+
+    .testimonial-content {
+    flex-direction: column;
+    gap: 40px;
+}
+
+   } 
 @media (max-width: 768px) {
     .testimonial-section {
         padding: 60px 0;
