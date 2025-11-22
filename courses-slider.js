@@ -1,61 +1,59 @@
-// COURSES SLIDER FUNCTIONALITY
 document.addEventListener("DOMContentLoaded", function () {
   const courseSets = [
     [
       {
         image: "images/Basic Book-2016 1.png",
-        title: "Only Guide You Need To Pass The Exam",
+        title: "Complete Exam Preparation",
         description:
-          "Unlock a world of knowledge with seamless access to UBT's comprehensive",
+          "Everything you need to ace your language proficiency tests",
         language: "Korean",
       },
       {
         image: "images/Basic Book-2016 1.png",
-        title: "Only Guide You Need To Pass The Exam",
-        description:
-          "Unlock a world of knowledge with seamless access to UBT's comprehensive",
+        title: "Cultural Immersion Programs",
+        description: "Learn language through cultural context and immersion",
         language: "Japanese",
       },
       {
         image: "images/Basic Book-2016 1.png",
-        title: "Only Guide You Need To Pass The Exam",
-        description:
-          "Unlock a world of knowledge with seamless access to UBT's comprehensive",
+        title: "Practical Conversation Skills",
+        description: "Focus on real-world communication and practical usage",
         language: "Korean",
       },
       {
         image: "images/Basic Book-2016 1.png",
-        title: "Only Guide You Need To Pass The Exam",
-        description:
-          "Unlock a world of knowledge with seamless access to UBT's comprehensive",
+        title: "Business Language Training",
+        description: "Specialized courses for professional environments",
         language: "Japanese",
       },
     ],
     [
       {
-        image: "images/Basic Book-2016 1.png",
-        title: "Master Language Skills Effectively",
+        image: "images/language-book.png",
+        title: "Only Guide You Need To Pass The Exam",
         description:
-          "Comprehensive study materials designed for quick learning and retention",
+          "Unlock a world of knowledge with seamless access to UBT's comprehensive",
         language: "Korean",
       },
       {
-        image: "images/Basic Book-2016 1.png",
-        title: "Professional Language Certification",
+        image: "images/language-book.png",
+        title: "Only Guide You Need To Pass The Exam",
         description:
-          "Get certified with our industry-recognized language programs",
+          "Unlock a world of knowledge with seamless access to UBT's comprehensive",
         language: "Japanese",
       },
       {
-        image: "images/Basic Book-2016 1.png",
-        title: "Interactive Learning Experience",
-        description: "Engage with interactive content and real-world scenarios",
+        image: "images/language-book.png",
+        title: "Only Guide You Need To Pass The Exam",
+        description:
+          "Unlock a world of knowledge with seamless access to UBT's comprehensive",
         language: "Korean",
       },
       {
-        image: "images/Basic Book-2016 1.png",
-        title: "Beginner to Advanced Courses",
-        description: "Progress at your own pace from basic to advanced levels",
+        image: "images/language-book.png",
+        title: "Only Guide You Need To Pass The Exam",
+        description:
+          "Unlock a world of knowledge with seamless access to UBT's comprehensive",
         language: "Japanese",
       },
     ],
@@ -81,6 +79,61 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         image: "images/Basic Book-2016 1.png",
+        title: "Business Language Training",
+        description: "Specialized courses for professional environments",
+        language: "Japanese",
+      },
+    ],
+    [
+      {
+        image: "images/book2.png",
+        title: "Master Language Skills Effectively",
+        description:
+          "Comprehensive study materials designed for quick learning and retention",
+        language: "Korean",
+      },
+      {
+        image: "images/book2.png",
+        title: "Professional Language Certification",
+        description:
+          "Get certified with our industry-recognized language programs",
+        language: "Japanese",
+      },
+      {
+        image: "images/book2.png",
+        title: "Interactive Learning Experience",
+        description: "Engage with interactive content and real-world scenarios",
+        language: "Korean",
+      },
+      {
+        image: "images/book2.png",
+        title: "Beginner to Advanced Courses",
+        description: "Progress at your own pace from basic to advanced levels",
+        language: "Japanese",
+      },
+    ],
+    [
+      {
+        image: "images/book3.png",
+        title: "Complete Exam Preparation",
+        description:
+          "Everything you need to ace your language proficiency tests",
+        language: "Korean",
+      },
+      {
+        image: "images/book3.png",
+        title: "Cultural Immersion Programs",
+        description: "Learn language through cultural context and immersion",
+        language: "Japanese",
+      },
+      {
+        image: "images/book3.png",
+        title: "Practical Conversation Skills",
+        description: "Focus on real-world communication and practical usage",
+        language: "Korean",
+      },
+      {
+        image: "images/book3.png",
         title: "Business Language Training",
         description: "Specialized courses for professional environments",
         language: "Japanese",
@@ -143,7 +196,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Auto slide every 6 seconds
   setInterval(() => {
     currentCourseIndex = (currentCourseIndex + 1) % courseSets.length;
     updateCourses(currentCourseIndex);

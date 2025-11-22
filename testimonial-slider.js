@@ -1,4 +1,3 @@
-// TESTIMONIAL SLIDER FUNCTIONALITY
 document.addEventListener("DOMContentLoaded", function () {
   const testimonials = [
     {
@@ -102,7 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Auto slide every 5 seconds
   setInterval(() => {
     currentIndex = (currentIndex + 1) % testimonials.length;
     updateTestimonial(currentIndex);
